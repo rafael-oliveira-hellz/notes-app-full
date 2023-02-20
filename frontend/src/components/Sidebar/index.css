@@ -1,0 +1,135 @@
+#hb_sidebar {
+  grid-area: sidebar;
+  background: #020509;
+  padding: 1.25rem 0.625rem;
+  overflow-y: auto;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  min-height: 100vh;
+  width: max-content;
+  min-width: 20.3125rem;
+}
+
+.hb_sidebar__responsive {
+  background-color: #562e66;
+  z-index: 9999 !important;
+  position: absolute !important;
+  left: 0 !important;
+  display: inline !important;
+}
+
+@media only screen and (max-width: 978px) {
+  #hb_sidebar {
+    display: none;
+  }
+
+  .hb_sidebar__title svg {
+    display: inline !important;
+  }
+}
+
+.hb_sidebar__img {
+  display: flex;
+  align-items: center;
+}
+
+.hb_sidebar__title > div > img {
+  width: 3.4375rem;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.hb_sidebar__title > div > h1 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-inline: 0.9375rem;
+  margin-block: 0;
+  display: inline;
+  color: #b06afc;
+}
+
+.hb_sidebar__title svg {
+  display: none;
+  font-size: 1.25rem;
+  color: #f3f4f6;
+}
+
+.hb_sidebar__title .hb_sidebar__icon {
+  margin-left: 0.625rem;
+}
+
+.hb_sidebar__menu h2 {
+  color: #b06afc;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 0 0.625rem;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.3125rem;
+}
+
+.hb_sidebar__link {
+  color: #f3f4f6;
+  padding: 0.625rem;
+  border-radius: 0.1875rem;
+  margin-bottom: 0.3125rem;
+}
+
+.hb_sidebar__link > a {
+  text-decoration: none;
+  color: #a5aaad;
+  font-weight: 700;
+  margin-left: 0.625rem;
+}
+
+.hb_sidebar__link > svg {
+  margin-right: 0.625rem;
+  font-size: 1.125rem;
+  display: inline;
+}
+
+.hb_sidebar__link > a:hover {
+  background-color: rgba(176, 106, 252, 0.3);
+  border-radius: 0.1875rem;
+  padding: 0.4375rem;
+}
+
+.active_link a:hover:not(.hb_sidebar__link),
+.hb_sidebar__logout > a:hover:not(.hb_sidebar__link) {
+  background-color: transparent;
+  padding: 0;
+}
+
+.active_link {
+  background-color: rgba(176, 106, 252, 0.3);
+  color: #b06afc;
+}
+
+.active_link a {
+  color: #b06afc;
+}
+
+.active_link a:focus {
+  background-color: rgba(176, 106, 252, 0.3);
+  border-radius: 0.1875rem;
+  padding: 0.4375rem;
+}
+
+.hb_sidebar__logout {
+  margin-top: 1.25rem;
+  padding: 0.625rem;
+  color: #e65061;
+}
+
+.hb_sidebar__logout > a {
+  text-decoration: none;
+  color: #e65061;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hb_sidebar__logout > svg {
+  margin-right: 0.625rem;
+  font-size: 1.325rem;
+}

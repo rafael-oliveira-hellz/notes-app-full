@@ -1,0 +1,10 @@
+.division {
+  width: 100%;
+  text-align: center;
+  margin: 30px auto 20px;
+}
+
+.division > div > div > .main-heading {
+  font-weight: 500;
+  font-size: 25px;
+}

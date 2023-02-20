@@ -1,0 +1,148 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.875rem;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #d3d3d3;
+  grid-area: nav;
+  min-height: 4.375rem;
+}
+
+.nav_icon {
+  display: none;
+}
+
+.nav_icon > svg {
+  font-size: 1.625rem;
+  color: #a5aaad;
+}
+
+.navbar__left > a {
+  margin-right: 1.875rem;
+  text-decoration: none;
+  color: #a5aaad;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.navbar__left > a:hover {
+  color: #b06afc;
+  border-bottom: 0.1875rem solid #b06afc;
+  padding-bottom: 0.75rem;
+  background-color: transparent;
+}
+
+.navbar__left .active_link {
+  color: #b06afc;
+  border-bottom: 0.1875rem solid #b06afc;
+  padding-bottom: 0.75rem;
+  background-color: transparent;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__right a {
+  text-decoration: none;
+}
+
+.navbar__right__time {
+  margin-right: 1.875rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar__right__time:not(:last-child) {
+  margin-right: 1.875rem;
+  min-height: 60px;
+}
+
+.navbar__right__time:not(:last-child) > a > svg {
+  font-size: 35px;
+  color: #a5aaad;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0.125rem 0.125rem 0.3125rem #d9d9d9,
+    -0.125rem -0.125rem 0.3125rem #ffffff;
+  padding: 0.3125rem;
+}
+
+.navbar__right__time__container {
+  position: relative;
+  top: 0.75rem;
+  max-width: fit-content;
+  display: none;
+}
+
+#time {
+  font-size: 1.9375rem;
+  font-weight: 700;
+  position: absolute;
+  right: -70px;
+  min-width: 8.5rem;
+  max-width: 12vw;
+  text-align: center;
+}
+
+.navbar__right
+  > .navbar__right__time
+  > a:hover
+  ~ .navbar__right__time__container {
+  display: block;
+}
+
+.navbar__right > a > img {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-left: 1.125rem;
+}
+
+@media only screen and (max-width: 978px) {
+  .nav_icon {
+    display: inline;
+  }
+
+  .navbar__left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    padding: 0 1.25rem;
+  }
+
+  .navbar__left {
+    display: none;
+  }
+
+  .navbar__right__time {
+    margin-right: 1.25rem;
+  }
+
+  .navbar__right__time:not(:last-child) {
+    margin-right: 1.25rem;
+  }
+
+  .navbar__right__time__container {
+    top: 0.5rem;
+  }
+
+  #time {
+    font-size: 1.5rem;
+    right: -50px;
+    min-width: 6.5rem;
+    max-width: 10vw;
+  }
+}

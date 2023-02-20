@@ -1,0 +1,98 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.875rem;
+  background-color: #fff;
+  border-bottom: 1px solid #d3d3d3;
+  height: 3.75rem;
+  grid-area: nav;
+}
+
+.nav_icon {
+  display: none;
+}
+
+.nav_icon > svg {
+  font-size: 26px;
+  color: #a5aaad;
+}
+
+.navbar__left > a {
+  margin-right: 1.875rem;
+  text-decoration: none;
+  color: #a5aaad;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.navbar__left .active_link {
+  color: #265acc;
+  border-bottom: 0.1875rem solid #265acc;
+  padding-bottom: 0.75rem;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__right > a {
+  text-decoration: none;
+}
+
+.newTime {
+  margin-top: 60px;
+  position: relative;
+  max-width: fit-content;
+  display: none;
+}
+
+#time {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  position: absolute;
+  right: -70px;
+  min-width: 12.5rem;
+  max-width: 12vw;
+  text-align: center;
+}
+
+/* hide the #time when .navbar__right > a is hovered */
+.navbar__right > a:hover ~ .newTime {
+  display: block;
+}
+
+.navbar__right > a > img {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-left: 1.125rem;
+}
+
+.navbar__right > a > svg {
+  font-size: 30px;
+  color: #a5aaad;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: 0.125rem 0.125rem 0.3125rem #d9d9d9, -2px -2px 5px #fff;
+  padding: 0.4375rem;
+}
+
+@media only screen and (max-width: 978px) {
+  .nav_icon {
+    display: inline;
+  }
+
+  .navbar__left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar__left {
+    display: none;
+  }
+}

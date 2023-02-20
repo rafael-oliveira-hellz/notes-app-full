@@ -1,0 +1,120 @@
+#sidebar {
+  grid-area: sidebar;
+  background-color: #020509;
+  padding: 1.25rem 0.625rem;
+  overflow-y: auto;
+  padding: 1.25rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  min-height: 100vh;
+  width: max-content;
+}
+
+.sidebar-responsive {
+  background-color: #2e4a66;
+  z-index: 9999 !important;
+  left: 0 !important;
+  position: absolute;
+  display: inline !important;
+}
+
+@media only screen and (max-width: 978px) {
+  #sidebar {
+    display: none;
+  }
+  .sidebar__title svg {
+    display: inline !important;
+  }
+}
+
+.sidebar__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f3f4f6;
+  margin-bottom: 1.875rem;
+}
+
+.sidebar__img {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__title > div > img {
+  width: 3.4375rem;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.sidebar__title > div > h1 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-left: 0.9375rem;
+  display: inline;
+}
+
+.sidebar__title svg {
+  font-size: 1.25rem;
+  display: none;
+  margin-left: 0.3125rem;
+}
+
+.sidebar__menu h2 {
+  color: #3ea175;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 0.625rem;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.3125rem;
+}
+
+.sidebar__link {
+  color: #f3f4f6;
+  padding: 0.625rem;
+  border-radius: 0.1875rem;
+  margin-bottom: 0.3125rem;
+}
+
+.active_menu_link {
+  background: rgba(62, 161, 117, 0.3);
+  color: #3ea175;
+}
+
+.active_menu_link a {
+  color: #3ea175;
+}
+
+.sidebar__link a:focus {
+  padding: 0.4375rem;
+  background: rgba(62, 161, 117, 0.3);
+  border-radius: 0.1875rem;
+}
+
+.sidebar__link > a {
+  text-decoration: none;
+  color: #a5aaad;
+  font-weight: 700;
+  margin-left: 0.625rem;
+}
+
+.sidebar__link > svg {
+  margin-right: 0.625rem;
+  font-size: 1.125rem;
+}
+
+.sidebar__logout {
+  margin-top: 1.25rem;
+  padding: 0.625rem;
+  color: #e65061;
+}
+
+.sidebar__logout > a {
+  text-decoration: none;
+  color: #e65061;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sidebar__logout > svg {
+  font-size: 1.25rem;
+}

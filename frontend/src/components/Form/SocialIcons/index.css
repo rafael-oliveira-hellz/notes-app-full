@@ -1,0 +1,28 @@
+.icon_container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #2a284d;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+
+.icon_container > a:hover {
+  cursor: pointer;
+  background-color: #aaafff;
+}
+
+.fa-facebook {
+  color: #1775f1;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-instagram {
+  color: #e1306c;
+}

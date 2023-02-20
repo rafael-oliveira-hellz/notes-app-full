@@ -1,0 +1,294 @@
+main {
+  grid-area: main;
+  background-color: #f3f4f6;
+  overflow-y: auto;
+}
+
+.main__container {
+  padding: 1.25rem 2.1875rem;
+}
+
+.main__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.main__title > img {
+  max-height: 6.25rem;
+  object-fit: contain;
+  margin-right: 1.25rem;
+}
+
+.main__greetings > h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2e4a66;
+  margin-bottom: 0.3125rem;
+}
+
+.datatable-filter .p-datatable.p-datatable-users .p-datatable-header {
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.datatable-filter .p-datatable.p-datatable-users .p-paginator {
+  padding: 1rem;
+}
+.datatable-filter .p-datatable.p-datatable-users .p-datatable-thead > tr > th {
+  text-align: left;
+}
+.datatable-filter .p-datatable.p-datatable-users .p-datatable-tbody > tr > td {
+  cursor: auto;
+}
+.datatable-filter
+  .p-datatable.p-datatable-users
+  .p-dropdown-label:not(.p-placeholder) {
+  text-transform: uppercase;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.flex {
+  display: flex;
+}
+
+.p-datatable
+  > .p-datatable-wrapper
+  > table.p-datatable-table
+  > tbody.p-datatable-tbody
+  > tr:hover {
+  background-color: #f3f4f6;
+  transition: all 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.p-datatable
+  > .p-datatable-wrapper
+  > table.p-datatable-table
+  > tbody.p-datatable-tbody
+  > tr
+  > td {
+  padding: 1rem;
+}
+
+.p-datatable
+  > .p-datatable-wrapper
+  > table.p-datatable-table
+  > thead.p-datatable-thead
+  > tr:nth-child(1)
+  > th {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.p-datatable
+  > .p-datatable-wrapper
+  > table.p-datatable-table
+  > thead.p-datatable-thead
+  > tr:nth-child(2)
+  > th {
+  text-align: center;
+}
+
+.p-datatable
+  > .p-datatable-wrapper
+  > table.p-datatable-table
+  > thead.p-datatable-thead
+  > tr:nth-child(2)
+  > th
+  > div
+  > div
+  > input.p-inputtext {
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.p-button-success {
+  background-color: #6c5b7b;
+  border-color: #6c5b7b;
+  color: #f3f4f6;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.375rem 1rem;
+  border-radius: 0.3125rem;
+  transition: all 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+.p-button-danger {
+  background-color: #edc2cb;
+  border-color: #edc2cb;
+  color: #dc143c;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.375rem 1rem;
+  border-radius: 0.3125rem;
+  transition: all 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+.p-button-info {
+  background-color: #dff400;
+  border-color: #dff400;
+  color: #2e4a66;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.375rem 1rem;
+  border-radius: 0.3125rem;
+  transition: all 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+.p-input-icon-left {
+  width: 100%;
+}
+
+.p-input-icon-left > svg {
+  color: #2e4a66;
+  margin-right: 0.625rem;
+}
+
+.p-column-filter {
+  text-align: center;
+}
+
+.p-datatable
+  > .p-datatable-wrapper
+  > table.p-datatable-table
+  > tbody.p-datatable-tbody
+  > tr
+  > td
+  > .user-badge.status-active {
+  background-color: #2e4a66;
+  color: #f3f4f6;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.3125rem;
+  transition: all 0.3s ease-in-out;
+  animation: activeMove 3s;
+  animation-fill-mode: forwards;
+}
+
+.p-datatable
+  > .p-datatable-wrapper
+  > table.p-datatable-table
+  > tbody.p-datatable-tbody
+  > tr
+  > td
+  > .user-badge.status-inactive {
+  background-color: #f3f4f6;
+  color: #2e4a66;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.3125rem;
+  transition: all 0.3s ease-in-out;
+  animation: inactiveMove 3s;
+  animation-fill-mode: forwards;
+}
+
+.p-datatable
+  > .p-datatable-wrapper
+  > table.p-datatable-table
+  > tbody.p-datatable-tbody
+  > tr
+  > td
+  > .user-badge.role-user {
+  background-color: #2e4a66;
+  color: #f3f4f6;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.3125rem;
+  transition: all 0.3s ease-in-out;
+  animation: userMove 3s;
+  animation-fill-mode: forwards;
+}
+
+.p-datatable
+  > .p-datatable-wrapper
+  > table.p-datatable-table
+  > tbody.p-datatable-tbody
+  > tr
+  > td
+  > .user-badge.role-admin {
+  background-color: #f3f4f6;
+  color: #2e4a66;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.3125rem;
+  transition: all 0.3s ease-in-out;
+  animation: adminMove 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes adminMove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 100px;
+    background-color: #2e4a66;
+    color: #f3f4f6;
+  }
+}
+
+@keyframes userMove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 100px;
+    background-color: #f3f4f6;
+    color: #2e4a66;
+  }
+}
+
+@keyframes activeMove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 100px;
+    background-color: #3b9668;
+    color: #f3f4f6;
+  }
+}
+
+@keyframes inactiveMove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 100px;
+    background-color: #bef2d8;
+    color: #2e4a66;
+  }
+}
+
+.isVisible {
+  display: block;
+  transition: all 1s ease-in;
+}
+
+.isClosed {
+  display: none;
+  transition: all 1s ease-out;
+}
+
+.modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #2e4a66;
+  cursor: pointer;
+}
