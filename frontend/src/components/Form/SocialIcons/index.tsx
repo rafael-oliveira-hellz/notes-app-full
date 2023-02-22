@@ -1,28 +1,27 @@
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './index.css';
 
 export const SocialIcons = () => {
+
+  const brandsIcons = [faFacebook, faInstagram, faTwitter]
+
+  //Cria os blocos de ícones de redes sociais
+  const renderBrandIcons = () => {
+    return brandsIcons.map((icons, index) => {
+      return (
+        <div key={index} className="col-4 icon_container">
+          <a href="http://" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={icons} />
+          </a>
+        </div>
+      )
+    })
+  }
+
   return (
-    <>
-      <div className="row mx-auto">
-        <div className="col-4 icon_container">
-          <a href="http://" target="_blank" rel="noreferrer">
-            <FaInstagram className="fa-instagram" />
-          </a>
-        </div>
-
-        <div className="col-4 icon_container">
-          <a href="http://" target="_blank" rel="noreferrer">
-            <FaFacebook className="fa-facebook" />
-          </a>
-        </div>
-
-        <div className="col-4 icon_container">
-          <a href="http://" target="_blank" rel="noreferrer">
-            <FaTwitter className="fa-twitter" />
-          </a>
-        </div>
-      </div>
-    </>
+    <div className="row mx-auto">
+      {renderBrandIcons()}
+    </div>
   );
 };

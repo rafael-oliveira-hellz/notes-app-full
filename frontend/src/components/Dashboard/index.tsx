@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { MainPanel } from '../../components/Main';
-import { Navbar } from '../../components/Navbar';
 import { Sidebar } from '../../components/Sidebar';
+import NewSidebar from '../../components/NewSidebar/NewSidebar';
 import { Admin } from '../../pages';
 import { AuthContext } from '../../store/contexts/AuthContext';
 import api from '../../utils/api';
@@ -71,19 +71,12 @@ export const Dashboard: React.FC = () => {
   return (
     <>
       <div className="hb_container">
-        <Sidebar
+        {/* <Sidebar
           handleSideBarOpen={handleSideBarOpen}
           sideBarOpen={sideBarOpen}
-        />
-
-        {location.pathname === '/' && <MainPanel user={user} />}
-
-        {location.pathname === '/admin/users' && <Admin />}
-
-        <Navbar
-          handleSidebarOpen={handleSideBarOpen}
-          sidebarOpen={sideBarOpen}
-        />
+        /> */}
+        <NewSidebar />
+        <MainPanel user={user} />
       </div>
     </>
   );
